@@ -17,16 +17,12 @@ def is_palindrome(sentence):
 def main():
      # TODO: put your input/output code here
     sentence = input("Please enter a word or sentence to test if it is palindromic: ")
-    #word2 = re.sub(r'[^A-Za-z]', "", sentence).lower()
+    
     if is_palindrome(sentence) == True:
         print("That is a palindrome!")
     else:
         print("Sorry, that is not a palindrome.")
-    # word3 = word2[::-1]
-    # if word2 == word3:
-    #     print("y")
-    # else:
-    #     print("n")
+
 
 
 
