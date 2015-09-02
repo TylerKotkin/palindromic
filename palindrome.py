@@ -1,3 +1,5 @@
+import re
+
 def is_palindrome(sentence):
     # TODO: return True or False if the sentence is or isn't a palindrome
     pass
@@ -5,8 +7,10 @@ def is_palindrome(sentence):
 
 def main():
     # TODO: put your input/output code here
-    pass
-
+    word = input("Please enter a word or sentence to test if it is palindromic: ")
+    newword = re.sub(r'[^A-Za-z]', "", word).lower()
+    newword == newword[::-1]
+    print(newword)
 
 if __name__ == '__main__':
     main()
